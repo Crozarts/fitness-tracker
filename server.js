@@ -20,7 +20,7 @@ mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/fitnessApp', {
     useCreateIndex: true,
     useFindAndModify: false
 });
-
+//  notworkingh?
 app.use(require('./routes/apiroutes.js'));
 app.use(require('./routes/htmlroutes.js'));
 
