@@ -21,7 +21,7 @@ mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/fitnessApp', {
     useFindAndModify: false
 });
 
-app.use(require('./routes/apiroutes.js'));
+app.use('./routes/apiRoutes');
 app.use(require('./routes/htmlroutes.js'));
 
 app.listen(PORT, () => {
